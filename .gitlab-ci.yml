@@ -4,7 +4,8 @@ variables:
   IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
   # Tell 'docker:dind' to enable TLS (recommended)
   # and generate certificates in the specified directory.
-  DOCKER_TLS_CERTDIR: "/certs"
+  #DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_TLS_CERTDIR: ""
 
 build-push-docker-image-job:
   # Specify a Docker image to run the job in.
